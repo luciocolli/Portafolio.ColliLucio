@@ -60,3 +60,8 @@ a:hover{
 p::first-line{
     color: #6a994e;
 }
+
+footer{
+    text-align: center;
+    color: #1d3557;
+}
