@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canes</title>
+    <link rel="stylesheet" href="canes.css">
+</head>
+<body>
+   <h1><b>HOLA</b></h1>   
+   <p>Hola, soy un <a href="https://es.wikipedia.org/wiki/Canis_familiaris">perro</a> , no me rompan los huevos y me voy a estar comparando con mi compa de casa :D</p>
+    
+   <!-- lista de cosas que me gustan -->
+   <h2>Info de los canes :</h2>
+   <table>
+   
+       <tr> 
+           <th>Nombre</th>
+           <th>Peso</th>
+           <th>Juego preferido</th>
+           <th>Peligroso</th>
+       </tr>
+       <tr>
+           <td>Ringo</td>
+           <td>8kg</td>
+           <td>Morder una piedra</td>
+           <td>Si</td>
+       </tr>
+       <tr>
+           <td>Brava</td>
+           <td>80kg</td>
+           <td>Ninguno</td>
+           <td>Si</td>
+       </tr>
+
+   </table>
+   <h3>Ringo style</h3>
+   <ol>
+       <li>comer</li>
+       <li>dormir</li>
+       <li>cagar en cualquier lado</li>       
+   </ol>
+   <h2>Otras cosas sobre Ringo:</h2>
+   <ul>
+       <li>Es facha</li>
+       <li>Es un cagon</li>
+       <li>Rompe la alfombra por placer</li>
+   </ul>
+   <h3>Tirando facha</h3>   
+   <img src="Pochocho.jpeg" alt="foto mia">
+    
+   
+   <h2>Hagase Socio!</h2>
+   <h3>Complete el formulario:</h3>
+    <form action="XD">
+   <p>
+       <label for="nombre">Nombre de Usuario</label>
+       <input type="text" placeholder="nombre de usuario" id="nombre" name="nombre">
+   </p>
+   <p>
+       <label for="contrasenia">Contraseña</label>
+       <input type="password" placeholder="contrasenia" id="contrasenia" name="contrasenia"/>
+   </p>
+   <p>
+       <label for="color">Que color te gusta mas?</label>
+       <input type="color" name="color" id="color"> 
+   </p>
+
+
+   <button>Enviar</button>
+   </form>
+  <!-- Ejemplo de HIJACKING de GOOGLE -->
+   <form action="https://www.google.com/search">
+       <input type="text" name="q">
+       <button>Buscar en Google</button>
+   </form>
+<h2>Diferentes Entradas</h2>
+<form action="/comida">
+
+    <input type="checkbox" name="ok" id="ok"/>
+     <label for="ok">Estoy de acuerdo</label>
+     <div>
+         <label for="xs">XS</label>
+         <input type="radio" name="talle" id="xs" value="xs"/>
+         <label for="s">S</label>
+         <input type="radio" name="talle" id="S" value="s"/>
+         <label for="m">M</label>
+         <input type="radio" name="talle" id="M" value="m"/>
+         <label for="l">L</label>
+         <input type="radio" name="talle" id="L" value="l"/>
+     </div>
+     <div>
+         <label for="comida">Elegi una comida</label>
+         <select name="comida" id="comida">
+             <option value="">Elegi una</option>
+             <option value="pollo">Pollo</option>
+             <option value="pasta">Pasta</option>
+             <option value="pescado">Pescado</option>
+         </select>
+        </div>
+    <div>
+        <label for="volumen">Volumen</label>
+        <input type="range" name="volumen" id="volumen" min="0" max="10"/>
+    </div>
+    <div>
+        <label for="historia">Contanos tu historia</label>
+        <br>
+        <textarea name="histotia" id="historia" placeholder="Escribe aqui" cols="30" rows="10"></textarea>
+    </div>
+    <h3>Validaciones</h3>
+
+        <div>
+            <label for="primernombre">Ingrese Primer Nombre</label>
+            <input type="text" name="primer_nombre" id="primernombre" required/>
+        </div>
+        <div>  
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" name="nombre_usuario" id="usuario" minlength="5" maxlength="15"/>
+        </div>
+    
+    <button>Mandale mecha</button>
+
+
+
+</form>
+</body>
+</html>
