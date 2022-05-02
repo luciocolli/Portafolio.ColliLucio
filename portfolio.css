@@ -1,30 +1,39 @@
 .navbar{
     position: fixed;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #C2EABD;
-    padding: 30px 0;
-    font-weight: 800;
-    font-size: 35px;
-    padding: 10 20 10 20;
-    border: black solid 5px;
-    flex-wrap: wrap;
-}
-.navbar .max-with{
+    background-color: burlywood;
+    padding: 5px 15px;
+    font-size: 30px;
+    font-weight: 700;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 23px;
-    padding: 10 15 10 15;
-}
-.navbar .logo{
-    padding: 10 5 10 5;
-    margin: white solid 5px;
     align-items: center;
+    width: 97%;
+    font-family: 'Roboto Mono', monospace;
 }
+
+.navbar .menu li {
+    display: inline-block;
+    flex-direction: row;
+    font-size: 21px;
+    list-style: none;
+} 
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .menu a:hover{
+    color: white;
+}
+
+.presentacion{
+    background-color: black;
+}
+
+.minombre{
+    color:brown;
+
+}
+
+
+
