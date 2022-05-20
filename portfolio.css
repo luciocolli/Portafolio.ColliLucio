@@ -1,39 +1,150 @@
-.navbar{
-    position: fixed;
-    background-color: burlywood;
-    padding: 5px 15px;
-    font-size: 30px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 97%;
-    font-family: 'Roboto Mono', monospace;
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
 }
 
-.navbar .menu li {
-    display: inline-block;
-    flex-direction: row;
-    font-size: 21px;
-    list-style: none;
-} 
-.menu li a{
+h1{font-size: 3.5em;}
+
+h2{font-size: 2.6em;}
+
+h3{font-size: 1.7em;}
+
+p{font-size: 1.2em;}
+
+a{
     text-decoration: none;
     color: black;
 }
 
-.navbar .menu a:hover{
-    color: white;
+ul{list-style: none;}
+
+li{font-size: 1.2em;}
+
+button{
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #83bbbb;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5rem;
 }
 
-.presentacion{
-    background-color: black;
+button:hover{
+    background-color: #588b8b ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    padding: 15px 25px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #83bbbb;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+header a{
+    padding: 5px 10px;
+}
+
+header a:hover{
+    color: #83bbbb;
 }
 
 .minombre{
-    color:brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(ImagenMiNombre.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#quiensoy h2{
+    padding-bottom: 65px;
+}
+
+#quiensoy p{
+    padding-bottom: 32.5px;
+}
+
+#quiensoy .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 50px;
+}
+
+#conocimientos h2{
+    padding-bottom: 65px;
+}
+
+#conocimientos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #83bbbb;
+    background-size: cover;
+    color: white;
+    padding: 130px 50px;
+}
+
+#contacto h2{
+    text-align: center;
+    padding-top: 65px;
 
 }
 
 
+
+#contacto .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 65px 50px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #83bbbb;
+    color: white;
+    padding: 10px 10px;
+}
 

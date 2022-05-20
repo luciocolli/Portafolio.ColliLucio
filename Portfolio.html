@@ -4,29 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Personal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
 </head>
 <body>
-    <!-- Navbar con logo, lista en linea pero en bloque-->
-    <nav class="navbar">
-        <div class="logo">
-            Portfolio
-        </div>            
-        <ul class="menu">
-            <li> <a href="#">Inicio</a></li>
-            <li> <a href="#"> Acerca de</a></li>
-            <li> <a href="#"> Habilidades</a></li>
-            <li> <a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="presentaciom">
-        <h2>Hola, mi nombre es</h2>
-        <span class="minombre"> Colli Lucio</span>
-    </div>
+    <header>
+        <div class="container">
+            <p class="logo">Portfolio</p>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Quien soy</a>
+                <a href="#">Mis Conocimientos</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
     
-    
-    
+    <section class="minombre">
+        <div class="container">
+            <h1 class="nombre">Mi nombre es <br> Colli Lucio</h1> 
+            <button>Contactame!</button>
+        </div>
+    </section>
+
+    <section id="quiensoy">
+        <div class="container">
+            <h2> Quien soy</h2>
+            <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, veritatis perspiciatis quae, culpa possimus ipsum enim fugit cumque officia pariatur assumenda totam, minus unde hic eos consequatur. Minus, nulla tempora?
+                Nam voluptatibus nobis a suscipit fugit doloremque aperiam enim veniam ad id accusantium officia ipsum soluta similique numquam ullam, exercitationem non, assumenda culpa sequi reprehenderit cumque nemo doloribus. Nostrum, voluptatibus.</p>
+                <br>
+                <button>Descargar mi CV</button>
+        </div>
+    </section>
+
+    <section id="conocimientos">
+        <div class="container">
+            <h2>Mis conocimientos</h2>
+            <ul class="conocimientos">
+                <li>✔️​ Secundario completo.</li> <br>
+                <li>✔️​ Lic. en Sistemas en la facultad de Informatica UNLP (2020 - actualidad).</li> <br>
+                <li>✔️​ Curso de Desarrollo Web en Udemy (2022 - actualidad).</li> <br>
+                <li>✔️​ Mozo en el Club de la Milanesa (Diciembre 2021 - Marzo 2022).</li> <br>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="container">
+            <h3>Ponerse en contacto</h3> <br>
+            <div class="info">
+                <p>Nombre: <br> Colli Lucio</p> <br>
+                <p>Direccion: <br> Villa Elisa, La Plata</p>  <br>
+                <p>Correo electronico: <br> luciocolli1@gmail.com</p> <br>
+                <form action="#" class="formulario">
+                    <p>
+                        <label for="nomyape">Nombre y Apellido</label> <br>
+                        <input type="text" placeholder="Nombre y Apellido" id="nomypae" name="nomyape"> 
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="mail">Correo electronico</label> <br>
+                        <input type="text" placeholder="correo@electronico.com" id="mail" name="mail">
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="asunto">Asunto</label> <br>
+                        <input type="text" placeholder="Asunto" id="asunto" name="asunto">
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="mensaje">Mensaje</label> <br>
+                        <input type="text" placeholder="Escribe aqui" id="mensaje" name="mensaje">
+                    </p>
+                    <br>
+
+                    <button>Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Gracias por visitar mi pagina!</p>
+    </footer>
+
+
+
+
+     
 </body>
 </html>
