@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -91,6 +96,7 @@ header a:hover{
     background-size: cover;
     background-position: center center;
     color: white;
+    font-size: 1.1em;
 }
 
 #quiensoy h2{
@@ -102,10 +108,8 @@ header a:hover{
 }
 
 #quiensoy .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 130px 50px;
+    text-align: center;
 }
 
 #conocimientos h2{
@@ -124,9 +128,7 @@ header a:hover{
 }
 
 #contacto h2{
-    text-align: center;
     padding-top: 65px;
-
 }
 
 
@@ -146,5 +148,62 @@ footer{
     background-color: #83bbbb;
     color: white;
     padding: 10px 10px;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1em;
+    }
+
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .minombre{
+        font-size: 1.5em;
+    }
+    
+    .minombre button{
+        font-size: 1.3em;
+    }
+
+    #quiensoy .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    #quiensoy .img-perfil{
+        background-image: url("Repositorio/foto-perfil.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+    }
+
+    #contacto .container{
+        display: flex;
+    }
+
+    #contacto .img-contacto{
+        background-image: url("Repositorio/contacto.png");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px;
+    }
+
+
 }
 
