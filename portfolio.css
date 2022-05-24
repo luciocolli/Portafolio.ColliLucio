@@ -112,6 +112,13 @@ header a:hover{
     text-align: center;
 }
 
+#quiensoy img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10%;
+    padding-bottom: 25px;
+}
+
 #conocimientos h2{
     padding-bottom: 65px;
 }
@@ -128,16 +135,21 @@ header a:hover{
 }
 
 #contacto h2{
-    padding-top: 65px;
+    padding-top: 45px;
+    padding-bottom: 10px;
 }
 
-
+#contacto img{
+    height: 250px;
+    width: 350px;
+    padding-top: 25px;
+}
 
 #contacto .container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     padding: 65px 50px;
 }
 
@@ -180,28 +192,44 @@ footer{
 
     #quiensoy .container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
-
-    #quiensoy .img-perfil{
-        background-image: url("Repositorio/foto-perfil.jpeg");
-        background-size: cover;
-        background-position: center center;
-        height: 300px;
+    #quiensoy img{
+        height: 400px;
         width: 300px;
     }
+
+    #quiensoy .texto-quiensoy{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        padding-left: 20px;
+        font-size: 1.1em;
+        width: 60%;
+    }
+
+    #conocimientos .container{
+        font-size: 1.2em;
+    }
+
 
     #contacto .container{
         display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 1.1em;
     }
 
-    #contacto .img-contacto{
-        background-image: url("Repositorio/contacto.png");
-        background-size: cover;
-        background-position: center center;
+    #contacto img{
         height: 300px;
         width: 300px;
+    }
+
+    #contacto .info{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
     }
 
 
