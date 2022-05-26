@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 html{
@@ -100,7 +101,8 @@ header a:hover{
 }
 
 #quiensoy h2{
-    padding-bottom: 65px;
+    padding-top: 30px;
+    margin-bottom: 25px;
 }
 
 #quiensoy p{
@@ -108,11 +110,17 @@ header a:hover{
 }
 
 #quiensoy .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 130px 50px;
     text-align: center;
 }
 
-#quiensoy img{
+#quiensoy .img-perfil{
+    background-image: url(foto-perfil.jpeg);
+    background-size: cover;
+    background-position: center center;
     height: 400px;
     width: 300px;
     border-radius: 10%;
@@ -134,24 +142,32 @@ header a:hover{
     padding: 130px 50px;
 }
 
-#contacto h2{
-    padding-top: 45px;
-    padding-bottom: 10px;
-}
-
-#contacto img{
-    height: 250px;
-    width: 350px;
-    padding-top: 25px;
-}
-
 #contacto .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 65px 50px;
+    padding: 50px 40px;
 }
+
+
+#contacto h2{
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+#contacto .info{
+    padding-bottom: 50px;
+}
+
+#contacto .img-contacto{
+    background-image: url(contacto.png);
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 350px;
+}
+
 
 footer{
     display: flex;
@@ -192,10 +208,14 @@ footer{
 
     #quiensoy .container{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    #quiensoy img{
+    #quiensoy .img-perfil{
+        background-image: url(foto-perfil.jpeg);
+        background-size: cover;
+        background-position: center center;
         height: 400px;
         width: 300px;
     }
@@ -203,7 +223,7 @@ footer{
     #quiensoy .texto-quiensoy{
         display: flex;
         flex-direction: column;
-        text-align: initial;
+        align-items: center;
         padding-left: 20px;
         font-size: 1.1em;
         width: 60%;
@@ -216,22 +236,27 @@ footer{
 
     #contacto .container{
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
         font-size: 1.1em;
     }
 
-    #contacto img{
-        height: 300px;
-        width: 300px;
+    #contacto .img-contacto{
+        display: flex;
+        background-image: url(contacto.png);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 500px;
     }
 
     #contacto .info{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         text-align: initial;
     }
-
+  
 
 }
 
