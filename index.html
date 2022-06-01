@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio/Lucio-Colli</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <p class="logo">Portfolio</p>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#quiensoy">Quien soy</a>
-                <a href="#conocimientos">Mis Conocimientos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="minombre">
-        <div class="container">
+        <nav>
+            <div class="logo">
+                <p>Portfolio</p>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="btn-nav">
+                <i class="fa-regular fa-bars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#quiensoy">Quien Soy</a></li>
+                <li><a href="#conocimientos">Mis Conocimientos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="minombre">
             <h1 class="nombre">Mi nombre es <br> Lucio Colli </h1> 
             <button>Contactame!</button>
         </div>
-    </section>
-
+    </header>
+    
     <section id="quiensoy">
         <div class="container">
             <div class="img-perfil"></div>
@@ -59,6 +62,7 @@
                 <p>👤​ Colli Lucio. </p><br>
                 <p>📍​  Villa Elisa, La Plata. </p> <br>
                 <p>📧 luciocolli1@gmail.com</p> <br>
+                <h3>Ponerse en contacto:</h3>
                 <form action="#" class="formulario">
                     <p>
                         <label for="nomyape">Nombre y Apellido</label> <br>
