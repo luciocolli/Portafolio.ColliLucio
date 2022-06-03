@@ -29,7 +29,7 @@ a{
 
 ul{list-style: none;}
 
-li{font-size: 1.2em;}
+li{text-decoration: none;}
 
 button{
     font-size: 21px;
@@ -52,23 +52,14 @@ button:hover{
 }
 
 header{
+    background-color: #121212;
+    position: fixed;
+    color: #fff;
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url(fondoBW.png);
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
 }
 
 nav{
-    height: 100px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -83,7 +74,7 @@ nav{
 
 .btn-nav{
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 35px;
     cursor: pointer;
 }
 
@@ -91,7 +82,7 @@ nav{
     position: fixed;
     width: 100%;
     height: 0vh;
-    top: 100px;
+    top: 50px;
     background: rgba(0, 0, 0, 0.95);
     text-align: center;
     transition: all .5s;
@@ -127,16 +118,30 @@ nav{
     display: block;
 }
 
-.minombre{
+
+
+#nombre .minombre{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(fondoBW.png);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 30px;
-    margin-top: 150px;
     font-size: 0.7em;
 }
 
-.minombre button{
-    font-size: 1.7em;
-}
 
 #quiensoy h2{
     padding-top: 30px;
@@ -159,25 +164,31 @@ nav{
     background-image: url(foto-perfil.jpeg);
     background-size: cover;
     background-position: center center;
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 250px;
     border-radius: 10%;
     padding-bottom: 25px;
 }
 
 #conocimientos h2{
     padding-bottom: 65px;
+    font-size: 2em;
 }
 
 #conocimientos .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     background-color: #121212;
     background-size: cover;
     color: white;
     padding: 130px 50px;
+}
+
+#conocimientos .conocimientos{
+    font-size: 1.1em;
 }
 
 #contacto .container{
@@ -190,11 +201,13 @@ nav{
 
 
 #contacto h2{
+    font-size: 2.3em;
     padding-top: 45px;
     padding-bottom: 10px;
 }
 
 #contacto h3{
+    font-size: 1.5em;
     padding-bottom: 10px;
 }
 
@@ -203,7 +216,7 @@ nav{
 }
 
 #contacto .formulario input{
-    font-size: 1em;
+    font-size: 0.7em;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding-left: 10px;
@@ -212,7 +225,7 @@ nav{
 }
 
 #contacto .formulario textarea{
-    font-size: 1em;
+    font-size: 0.7em;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     padding-left: 10px;
@@ -226,8 +239,8 @@ nav{
     background-image: url(contacto.png);
     background-size: cover;
     background-position: center center;
-    height: 250px;
-    width: 350px;
+    height: 150px;
+    width: 250px;
 }
 
 
@@ -238,55 +251,102 @@ footer{
     background-color: black;
     color: rgba(255, 255, 255, 0.7);
     padding: 10px 10px;
+    font-size: 0.7em;
 }
 
     
-@media (min-width: 576px){
+@media (min-width: 480px){
+
+    #nombre .minombre{
+        font-size: 0.9em;
+    }
+    #nombre .minombre button{
+        font-size: 2em;
+    }
+
+    #quiensoy .texto-quiensoy button{
+        font-size: 1.5em;
+    }
 
     #conocimientos .container{
-        padding: 75px 50px;
+        padding: 100px 50px;
     }
-}
+
+    #conocimientos h2 {
+        font-size: 2.3em;
+    }
+
+    #conocimientos .conocimientos{
+        font-size: 1.3em;
+    }
+
+    #contacto .info{
+        font-size: 1.2em;
+    }
+
+
+    #contacto .img-contacto{
+        height: 200px;
+        width: 300px;
+    }
+
+    footer{
+        font-size: 0.9em;
+    }
+} 
 
 @media (min-width:768px){
     
-    header{
-        position: fixed;
-        width: 100%;
+    .logo{
+        font-size: 1.5em;
+        margin-left: 15px;
     }
-    header .container{
+
+    nav{
+        height: 100px;
+    }
+
+    .btn-nav{
+        display: none;
+    }
+
+    .menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 10px;
+        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
+
+    }
+
+    .menu li{
+        display: inline-block;
+        margin: 0 10px;
+        transition: none;
+    }
+
+    .menu li a{
+        font-size: 1em;
+    }
+
+    #nombre .minombre{
         font-size: 1.1em;
     }
 
-    header nav{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    .minombre{
-        font-size: 1.1em;
-    }
-    
-    .minombre button{
-        font-size: 1.3em;
-    }
 
     #quiensoy .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    #quiensoy .img-perfil{
-        background-image: url(foto-perfil.jpeg);
-        background-size: cover;
-        background-position: center center;
+   #quiensoy .img-perfil{
         height: 450px;
         width: 300px;
     }
@@ -309,37 +369,58 @@ footer{
     #contacto .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        font-size: 1em;
+        justify-content: space-between;
     }
 
     #contacto .img-contacto{
-        display: flex;
-        background-image: url(contacto.png);
-        background-size: cover;
-        background-position: center center;
-        height: 300px;
+        height: 350px;
         width: 300px;
-    }
+    } 
 
     #contacto .info{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         text-align: initial;
+        font-size: 1.3em;
+    }
+
+    #contacto .formulario input {
+        font-size: 1em;
+    }
+
+    #contacto .formulario textarea {
+        font-size: 0.9em;
+    }
+
+    #contacto .formulario button {
+        font-size: 1.1em;
+    }
+  
+    footer{
+        font-size: 0.9em;
     }
   
 
 }
 
-@media (min-width: 992px){
+@media (min-width: 960px){
 
-    .minombre{
-        font-size: 1.2em;
+    .logo{
+        font-size: 1.7em;
+        margin-left: 30px;
     }
 
-    .minombre button{
-        font-size: 1.4em;
+    .menu{
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        font-size: 1.1em;
+    }
+
+    #nombre .minombre {
+        font-size: 1.2em;
     }
 
     #quiensoy .container{
@@ -347,67 +428,124 @@ footer{
     }
 
     #quiensoy .texto-quiensoy{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     #quiensoy .texto-quiensoy button{
         font-size: 1.3em;
     }
 
+    #quiensoy .img-perfil{
+        height: 500px;
+        width: 400px;
+    }
+
+    #conocimientos h2{
+        font-size: 2.5em;
+    }
+
+    #conocimientos .conocimientos{
+        font-size: 1.5em;
+    }
+
     #contacto .container{
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    #contacto .formulario button{
+        font-size: 1.4em;
     }
 
     #contacto .img-contacto{
         height: 400px;
         width: 400px;
+        margin-right: 40px;
+    }
+
+    footer{
+        font-size: 1em;
     }
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
 
-    header .container{
-        font-size: 1.3em;
-    }
-
-    .minombre{
-        font-size: 1.3em;
-    }
-
-    .minombre button{
-        font-size: 1.4em;
-    }
-
-    #quiensoy .texto-quiensoy{
-        font-size: 1.2em;
-    }
-    
     #quiensoy .texto-quiensoy button{
-        font-size: 1.4em;
-        padding: 21px;
-    }
-    
-    #quiensoy .img-perfil{
-        height: 450px;
-        width: 350px;
-    }
-
-    #conocimientos .container{
-        font-size: 1.3em;
-    }
-
-    #contacto .container{
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     #contacto .img-contacto{
         height: 450px;
         width: 450px;
+        margin-right: 50px;
     }
-    
-    #contacto .container button{
-        font-size: 1.2em;
+}
+
+@media (min-width: 1400px){
+
+    .logo{
+        font-size: 2.2em;
+        margin-left: 50px;
     }
 
+    .menu{
+        margin-right: 50px;
+    }
+
+    .menu li a{
+        font-size: 1.5em;
+    }
+
+    #quiensoy .img-perfil{
+        margin-left: 50px;
+        height: 600px;
+        width: 450px;
+    }
+
+    #quiensoy .texto-quiensoy{
+        font-size: 1.5em;
+    }
+
+    #conocimientos h2{
+        font-size: 3em;
+    }
+
+    #conocimientos .conocimientos{
+        font-size: 2em;
+    }
+
+    #contacto .info{
+        font-size: 1.8em;
+    }
+
+    #contacto .img-contacto{
+        height: 600px;
+        width: 600px;
+    }
+
+} 
+
+@media (min-width: 4000px){
+    .container{
+        max-width: 4000px;
+    }
+    header{
+        height: 200px;
+        width: 100%;
+    }
+
+    nav .container{
+        display: inline-block;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 5em;
+    }
+
+    .menu li a{
+        font-size: 4.5em;
+        margin-right: 50px;
+    }
 }
+
