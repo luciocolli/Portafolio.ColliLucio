@@ -13,15 +13,15 @@
             <div class="logo">
                 <p>Portfolio</p>
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="btn-nav">
+            <input type="checkbox" id="check">  <!-- uso este id para descheckear el menu hamburguesa luego de que se selecciona una opcion -->
+            <label for="check" class="btn-nav" >
                 <i class="fa-regular fa-bars"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></i>
             </label>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quien Soy</a></li>
-                <li><a href="#">Mis Conocimientos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#nombre" onclick="cerrarMenu()" >Inicio</a></li>
+                <li><a href="#quiensoy" onclick="cerrarMenu()" >Quien Soy</a></li>
+                <li><a href="#conocimientos" onclick="cerrarMenu()" >Mis Conocimientos</a></li>
+                <li><a href="#contacto" onclick="cerrarMenu()" >Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
     <section id="nombre">
         <div class="minombre">
             <h1>Mi nombre es <br> Lucio Colli </h1> 
-            <button>Contactame!</button>
+            <button onclick="bajarASeccion('#contacto')">Contactame!</button>
         </div>
     </section>
     
@@ -41,7 +41,7 @@
                 <p class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, veritatis perspiciatis quae, culpa possimus ipsum enim fugit cumque officia pariatur assumenda totam, minus unde hic eos consequatur. Minus, nulla tempora?
                     Nam voluptatibus nobis a suscipit fugit doloremque aperiam enim veniam ad id accusantium officia ipsum soluta similique numquam ullam, exercitationem non, assumenda culpa sequi reprehenderit cumque nemo doloribus. Nostrum, voluptatibus.</p>
                     <br>
-                    <button>Descargar mi CV</button>
+                    <button>Descargar mi CV</button> <!-- actualizar mi CV y poner para poder descargar -->
             </div>
         </div>
     </section>
@@ -52,7 +52,8 @@
             <ul class="conocimientos">
                 <li>✔️​ Secundario completo.</li> <br>
                 <li>✔️​ Lic. en Sistemas en la facultad de Informatica UNLP (2020 - actualidad).</li> <br>
-                <li>✔️​ Curso de Desarrollo Web en Udemy (2022 - actualidad).</li> <br>
+                <li>✔️​ Curso de Desarrollo Web en Udemy (2022).</li> <br>
+                <li>✔️ Curso de Python basico en Coderhouse (2023)</li> <br>
                 <li>✔️​ Mozo en el Club de la Milanesa (Diciembre 2021 - Marzo 2022).</li> <br>
             </ul>
         </div>
@@ -66,7 +67,7 @@
                 <p>📍​  Villa Elisa, La Plata. </p> <br>
                 <p>📧 luciocolli1@gmail.com</p> <br>
                 <h3>Ponerse en contacto:</h3>
-                <form action="#" class="formulario">
+                <form action="#" class="formulario" method="post"> <!-- debo implementar nodeJs o alguna otra tech que pueda enviar mails. si o si debo utilizar el metodo Post -->
                     <p>
                         <label for="nomyape">Nombre y Apellido</label> <br>
                         <input type="text" placeholder="Nombre y Apellido" id="nomypae" name="nomyape"> 
@@ -91,7 +92,7 @@
                     </p>
                     <br>
                     
-                    <button>Enviar Mensaje</button>
+                    <button type="submit" >Enviar Mensaje</button>
                 </form>
             </div>
             <div class="img-contacto"></div>
@@ -104,6 +105,7 @@
 
 
 
+    <script src="./app.js"></script>
 
      
 </body>
